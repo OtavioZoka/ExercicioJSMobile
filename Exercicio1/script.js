@@ -4,7 +4,10 @@ HTML dentro de uma div chamada Map -->*/
 window.onload = function () {
 
 };
-function localizar() {
-    navigator.geolocation.getCurrentPosition(showPosition);
-
+function Localizar() {
+    navigator.geolocation.getCurrentPosition(posiDoElemento);
+    //console.log é feito para imprimir
+}
+function posiDoElemento(position) {
+    console.log(position);
 }
